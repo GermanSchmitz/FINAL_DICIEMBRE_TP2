@@ -31,7 +31,7 @@ export default class DocumentoPasajero {
         this.#pasaporte = new NumericoNoNuloPositivo(pasaporte);
     }
     set fechaDeNacimiento(fechaDeNacimiento) {
-        this.#fechaDeNacimiento = new FechaDeNacimiento();
+        this.#fechaDeNacimiento = new Date(fechaDeNacimiento);
     }
     set horaDeVuelo(horaDeVuelo) {
         if (horaDeVuelo > 23) {
